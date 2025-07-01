@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNET - Ejemplos HTML para el Profesor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0a9396;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #005f73;
+        }
+        .ejemplo {
+            border-left: 4px solid #ee9b00;
+            padding-left: 15px;
+            margin: 25px 0;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #001219;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Universidad Nacional Experimental del Táchira</h1>
+        <p>Ejemplos HTML para la asignatura - Presentado al Profesor</p>
+    </header>
+
+    <nav>
+        <a href="#ej1">Estructura</a>
+        <a href="#ej2">Párrafos</a>
+        <a href="#ej3">Enlaces</a>
+        <a href="#ej4">Listas</a>
+        <a href="#ej5">Multimedia</a>
+        <a href="#ej6">Divs</a>
+        <a href="#ej7">Formularios</a>
+        <a href="#ej8">Metadatos</a>
+        <a href="#ej9">Otras etiquetas</a>
+    </nav>
+
+    <div class="container">
+        <section id="ej1" class="ejemplo">
+            <h2>Ejemplo 1: Estructura Básica HTML</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;UNET - Página Principal&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Bienvenido a la UNET&lt;/h1&gt;
+    &lt;p&gt;Ejemplo de estructura básica.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p><strong>Explicación:</strong> Define la raíz del documento y su organización básica.</p>
+        </section>
+
+        <section id="ej2" class="ejemplo">
+            <h2>Ejemplo 2: Párrafos y Encabezados</h2>
+            <pre><code>&lt;h1&gt;Tipos de Frutas&lt;/h1&gt;
+&lt;h2&gt;Manzanas&lt;/h2&gt;
+&lt;p&gt;Las manzanas son rojas o verdes.&lt;/p&gt;
+
+&lt;h2&gt;Peras&lt;/h2&gt;
+&lt;p&gt;Las peras tienen forma de lágrima.&lt;/p&gt;</code></pre>
+            <p><strong>Explicación:</strong> Jerarquía de texto con <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> y párrafos con <code>&lt;p&gt;</code>.</p>
+        </section>
+
+        <section id="ej3" class="ejemplo">
+            <h2>Ejemplo 3: Enlaces</h2>
+            <pre><code>&lt;p&gt;Visita nuestro &lt;a href="https://unet.edu.ve"&gt;portal UNET&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Contacto: &lt;a href="mailto:info@unet.edu.ve"&gt;correo electrónico&lt;/a&gt;.&lt;/p&gt;</code></pre>
+            <p><strong>Explicación:</strong> Enlaces externos/internos con <code>&lt;a href=""&gt;</code>.</p>
+        </section>
+
+        <section id="ej4" class="ejemplo">
+            <h2>Ejemplo 4: Listas</h2>
+            <pre><code>&lt;h3&gt;Cosas para pasear a mi perro:&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Correa&lt;/li&gt;
+    &lt;li&gt;Agua&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Pasos para lavar un carro:&lt;/h3&gt;
+&lt;ol&gt;
+    &lt;li&gt;Enjabonar&lt;/li&gt;
+    &lt;li&gt;Enjuagar&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            <p><strong>Explicación:</strong> Listas no ordenadas (<code>&lt;ul&gt;</code>) y ordenadas (<code>&lt;ol&gt;</code>).</p>
+        </section>
+
+        <section id="ej5" class="ejemplo">
+            <h2>Ejemplo 5: Multimedia</h2>
+            <pre><code>&lt;img src="perro.jpg" alt="Perro jugando" width="200"&gt;
+
+&lt;video width="300" controls&gt;
+    &lt;source src="carro.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+            <p><strong>Explicación:</strong> Inserta imágenes (<code>&lt;img&gt;</code>) y videos (<code>&lt;video&gt;</code>).</p>
+        </section>
+
+        <section id="ej6" class="ejemplo">
+            <h2>Ejemplo 6: Divs</h2>
+            <pre><code>&lt;div style="background: #e9d8a6; padding: 10px;"&gt;
+    &lt;h3&gt;Manzanas&lt;/h3&gt;
+    &lt;p&gt;Texto sobre manzanas.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            <p><strong>Explicación:</strong> Contenedores para agrupar elementos.</p>
+        </section>
+
+        <section id="ej7" class="ejemplo">
+            <h2>Ejemplo 7: Formularios</h2>
+            <pre><code>&lt;form action="/procesar" method="POST"&gt;
+    &lt;label for="fruta"&gt;Fruta favorita:&lt;/label&gt;
+    &lt;input type="text" id="fruta" name="fruta"&gt;
+
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</code></pre>
+            <p><strong>Explicación:</strong> Campos interactivos para usuarios.</p>
+        </section>
+
+        <section id="ej8" class="ejemplo">
+            <h2>Ejemplo 8: Metadatos</h2>
+            <pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="description" content="Página UNET"&gt;
+    &lt;title&gt;Ejemplo&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+            <p><strong>Explicación:</strong> Información invisible para navegadores.</p>
+        </section>
+
+        <section id="ej9" class="ejemplo">
+            <h2>Ejemplo 9: Otras Etiquetas</h2>
+            <pre><code>&lt;p&gt;El &lt;strong&gt;perro&lt;/strong&gt; es &lt;em&gt;muy&lt;/em&gt; juguetón.&lt;/p&gt;
+&lt;details&gt;
+    &lt;summary&gt;Ver más&lt;/summary&gt;
+    &lt;p&gt;Las peras son dulces.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+            <p><strong>Explicación:</strong> Etiquetas semánticas y de formato.</p>
+        </section>
+    </div>
+
+    <footer>
+        © 2024 UNET - Ejercicios HTML para el profesor
+    </footer>
+</body>
+</html>
