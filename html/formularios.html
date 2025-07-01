@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Ejemplo</h1>
+    
+    <form action="/procesar" method="POST">
+        <label for="fruta">Fruta favorita:</label>
+        <input type="text" id="fruta" name="fruta" placeholder="Ej: pera"><br><br>
+        
+        <label for="animal">Animal favorito:</label>
+        <select id="animal" name="animal">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+        </select><br><br>
+        
+        <input type="submit" value="Enviar al Profesor">
+    </form>
+</body>
+</html>
